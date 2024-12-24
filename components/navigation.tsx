@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X, Zap } from 'lucide-react'
+import ScrollProgressBar from '@/components/scroll-progress-bar'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -62,7 +63,7 @@ export function Navigation() {
           </button>
         </div>
       </div>
-
+ <ScrollProgressBar />
       {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
