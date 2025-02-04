@@ -17,35 +17,35 @@ const advantages = [
   { 
     title: 'SMART CONNECTIVITY', 
     icon: Wifi,
-    image: '/placeholder.svg?height=400&width=600',
+    image: '/image_fx_6.jpg',
     description: 'Stay connected with advanced infotainment systems and real-time updates.',
     buttonText: 'Explore Features'
   },
   { 
     title: 'ZERO EMISSIONS', 
     icon: Battery,
-    image: '/placeholder.svg?height=400&width=600',
+    image: '/image_fx_7.jpg',
     description: 'Drive with a clear conscience, knowing you\'re contributing to a cleaner environment.',
     buttonText: 'Learn More'
   },
   { 
     title: 'IMPRESSIVE RANGE', 
     icon: Gauge,
-    image: '/placeholder.svg?height=400&width=600',
+    image: '/image_fx_8.jpg',
     description: 'Go further on a single charge with our advanced battery technology.',
     buttonText: 'Check Range'
   },
   { 
     title: 'EFFICIENT CHARGING', 
     icon: Zap,
-    image: '/placeholder.svg?height=400&width=600',
+    image: '/image_fx_9.jpg',
     description: 'Charge faster and smarter with our innovative charging solutions.',
     buttonText: 'Find Chargers'
   },
   { 
     title: 'SAFETY FIRST', 
     icon: Shield,
-    image: '/placeholder.svg?height=400&width=600',
+    image: '/image_fx_10.jpg',
     description: 'Experience peace of mind with our advanced safety features and robust design.',
     buttonText: 'Safety Details'
   },
@@ -55,7 +55,7 @@ export function AdvantagesSection() {
   const [activeTab, setActiveTab] = useState<number>(0);
 
   return (
-    <section id="benefits" className="py-12 sm:py-16 md:py-24 relative">
+    <section id="solutions" className="py-12 sm:py-16 md:py-24 relative">
       <div className="diagonal-lines  inset-0 opacity-10" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -115,7 +115,7 @@ export function AdvantagesSection() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-[--neon] text-background px-6 py-2 rounded-full font-medium text-sm sm:text-base hover:glow transition-all duration-200"
+                    className="bg-[--neon] text-black px-6 py-2 rounded-full font-medium text-sm sm:text-base hover:glow transition-all duration-200"
                   >
                     {advantages[activeTab].buttonText}
                   </motion.button>

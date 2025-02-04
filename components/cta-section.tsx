@@ -28,7 +28,7 @@ export function CTASection() {
               whileTap={{ scale: 0.95 }}
               className="w-12 h-12 sm:w-16 sm:h-16 bg-[--neon] rounded-full flex items-center justify-center justify-self-center glow"
             >
-              <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-background" />
+              <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-black" />
             </motion.button>
           </div>
         </motion.div>

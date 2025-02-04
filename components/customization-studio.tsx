@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
-import { ChevronRight, Palette, Zap, Gauge } from 'lucide-react'
+import { ChevronRight, Palette, Zap, Gauge, LucideAlertCircle, LucideCar,  } from 'lucide-react'
 
 const customizationOptions = [
   { 
@@ -13,7 +13,7 @@ const customizationOptions = [
   },
   { 
     name: 'Interior Trim', 
-    icon: Palette,
+    icon: LucideCar,
     description: 'Personalize your cabin with premium materials and finishes. Select from luxurious leather, sustainable fabrics, or high-tech composites to create an interior that reflects your style and comfort preferences.'
   },
   { 
@@ -26,6 +26,11 @@ const customizationOptions = [
     icon: Gauge,
     description: 'Maximize your journey with our advanced range extender options. Choose from battery upgrades or efficient auxiliary power units to increase your vehicle\'s range and reduce charging stops on long trips.'
   },
+  { 
+    name: ' Wheel Customization', 
+    icon: LucideAlertCircle,
+    description: 'Upgrade your wheels to match your vehicle\'s style and performance needs. Choose from a variety of sizes, designs, and materials to optimize your vehicle\'s handling, efficiency, and aesthetics.'
+  },
 ]
 
 export function CustomizationStudio() {
@@ -36,7 +41,7 @@ export function CustomizationStudio() {
   }
 
   return (
-    <section className="py-16 md:py-24  from-gray-900 to-black">
+    <section id="benefits" className="py-16 md:py-24  from-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -51,10 +56,10 @@ export function CustomizationStudio() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative aspect-square rounded-3xl overflow-hidden"
+            className="relative aspect-video rounded-3xl overflow-hidden"
           >
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/image_fx_11.jpg"
               alt="Customizable electric car"
               fill
               className="object-cover"

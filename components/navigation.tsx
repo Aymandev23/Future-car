@@ -11,10 +11,12 @@ export function Navigation() {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Our Solutions', href: '#solutions' },
-    { name: 'Sustainability', href: '#sustainability' },
-    { name: 'Benefits', href: '#benefits' },
     { name: 'About Us', href: '#about' },
+    { name: 'Our Solutions', href: '#solutions' },
+    { name: 'Benefits', href: '#benefits' },
+    { name: 'Sustainability', href: '#sustainability' },
+   
+   
   ]
 
   return (
@@ -49,9 +51,10 @@ export function Navigation() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:block bg-[--neon] text-background px-6 py-2 rounded-full font-medium hover:glow transition-all duration-200"
+            className="hidden md:block bg-[--neon] text-black px-6 py-2 rounded-full font-medium hover:glow transition-all duration-200"
           >
-            Test Drive
+            <Link href="#contact">
+            Test Drive</Link>
           </motion.button>
 
           <button
@@ -92,9 +95,12 @@ export function Navigation() {
               <motion.button
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                className="w-full bg-[--neon] text-background px-6 py-2 rounded-full font-medium"
+                className="w-full bg-[--neon] text-black px-6 py-2 rounded-full font-medium"
               >
-                Test Drive
+                 <Link
+                    href="#contact"                    
+                  >
+                Test Drive</Link>
               </motion.button>
             </div>
           </motion.div>

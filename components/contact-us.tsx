@@ -22,7 +22,7 @@ export function ContactUs() {
   }
 
   return (
-    <section className="py-16 md:py-24 ">
+    <section id="contact" className="py-16 md:py-24 ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export function ContactUs() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"
-            className="w-full bg-[--neon] text-black font-bold py-3 rounded-lg flex items-center justify-center space-x-2 hover:bg-opacity-90 transition-colors"
+            className="w-full bg-[--neon] text-black font-bold py-3 rounded-full flex items-center justify-center space-x-2 hover:bg-opacity-90 transition-colors"
           >
             <span>Send Message</span>
             <Send className="w-5 h-5" />

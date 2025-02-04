@@ -8,21 +8,21 @@ import { ChevronLeft, ChevronRight, Zap } from 'lucide-react'
 const slides = [
   {
     id: 1,
-    image: '/placeholder.svg?height=800&width=1600',
+    image: '/image_fx.jpg',
     alt: 'Electric sports car with neon accents',
     title: 'FUTURE OF MOBILITY',
     description: 'Experience the next generation of electric vehicles'
   },
   {
     id: 2,
-    image: '/placeholder.svg?height=800&width=1600',
+    image: '/image_fx_2.jpg',
     alt: 'Interior dashboard with advanced displays',
     title: 'SMART TECHNOLOGY',
     description: 'Connected features that adapt to your lifestyle'
   },
   {
     id: 3,
-    image: '/placeholder.svg?height=800&width=1600',
+    image: '/image_fx_3.jpg',
     alt: 'Charging port with illuminated elements',
     title: 'RAPID CHARGING',
     description: 'Power up quickly and get back on the road'
@@ -54,7 +54,7 @@ export function HeroSlider() {
   }
 
   return (
-    <div className="relative aspect-[16/12] sm:aspect-[2/1] w-full overflow-hidden rounded-[20px] sm:rounded-[40px] bg-[#111]">
+    <div className="relative aspect-[4/5] sm:aspect-[2/1] w-full overflow-hidden rounded-[20px] sm:rounded-[40px] bg-[#111]">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -100,7 +100,7 @@ export function HeroSlider() {
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            className="text-background"
+            className="text-black"
           >
             <Zap className="w-4 h-4 sm:w-6 sm:h-6" />
           </motion.div>

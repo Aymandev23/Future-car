@@ -8,10 +8,12 @@ export function Footer() {
   const navigation = {
     main: [
       { name: 'Home', href: '#home' },
-      { name: 'Our Solutions', href: '#solutions' },
-      { name: 'Sustainability', href: '#sustainability' },
-      { name: 'Benefits', href: '#benefits' },
       { name: 'About Us', href: '#about' },
+      { name: 'Our Solutions', href: '#solutions' },
+      { name: 'Benefits', href: '#benefits' },
+      { name: 'Sustainability', href: '#sustainability' },
+      
+      
     ],
     social: [
       { name: 'Facebook', icon: Facebook, href: '#' },
@@ -84,7 +86,7 @@ export function Footer() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="w-full bg-[--neon] text-background px-6 py-2 rounded-full font-medium text-sm hover:glow transition-all duration-200"
+                className="w-full bg-[--neon] text-black px-6 py-2 rounded-full font-medium text-sm hover:glow transition-all duration-200"
               >
                 Subscribe
               </motion.button>
@@ -99,9 +101,9 @@ export function Footer() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-2xl sm:text-4xl font-bold text-stroke"
+              className="text-xs sm:text-sm text-gray-400"
             >
-              KRAFTFAHRZEUG
+              <p>&copy; {new Date().getFullYear()} Future Auto. All rights reserved.</p>
             </motion.div>
 
             <div className="flex space-x-4 sm:space-x-6">
@@ -120,9 +122,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="mt-6 sm:mt-8 text-center text-xs sm:text-sm text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Future Auto. All rights reserved.</p>
-          </div>
+      
         </div>
       </div>
     </footer>

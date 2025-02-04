@@ -6,24 +6,24 @@ import Image from 'next/image'
 export function ExperienceSection() {
   const features = [
     { 
-      image: '/placeholder.svg?height=96&width=96', 
+      image: '/image_fx_5.jpg', 
       alt: 'Interior dashboard',
       title: 'Smart Interior'
     },
     { 
-      image: '/placeholder.svg?height=96&width=96', 
+      image: '/image_fx_12.jpg', 
       alt: 'Charging port',
       title: 'Fast Charging'
     },
     { 
-      image: '/placeholder.svg?height=96&width=96', 
+      image: '/image_fx_13.jpg', 
       alt: 'Connected features',
       title: 'Connected'
     },
   ]
 
   return (
-    <section id="solutions" className="py-12 sm:py-16 md:py-24 relative">
+    <section id="about" className="py-12 sm:py-16 md:py-24 relative">
       <div className="diagonal-lines absolute inset-0 opacity-10" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
@@ -57,8 +57,8 @@ export function ExperienceSection() {
                     <Image
                       src={feature.image}
                       alt={feature.alt}
-                      width={96}
-                      height={96}
+                      width={600}
+                      height={600}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   </div>
@@ -86,7 +86,7 @@ export function ExperienceSection() {
               className="rounded-[20px] sm:rounded-[40px] overflow-hidden relative group"
             >
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/image_fx_4.jpg"
                 alt="Electric car charging"
                 width={600}
                 height={400}

@@ -23,7 +23,7 @@ const commitments = [
 
 export function SustainabilityCommitment() {
   return (
-    <section className="py-16 md:py-24 from-green-900 to-emerald-800">
+    <section id="sustainability" className="py-16 md:py-24 from-green-900 to-emerald-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
